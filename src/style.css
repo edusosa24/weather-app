@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  color: White;
+  font-family: "Robik", "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  gap: 4rem;
+  background-image: url("./images/city.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#city{
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px white solid line;
+  width: 200px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#city:focus{
+  outline: none;
+}
+
+#search{
+  font-size: 1.5rem;
+}
+
+.weather-box{
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0 2rem 0;
+}
+
+.change-system{
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 3rem;
+}
+
+.weather-img{
+  width: 150px;
+  height: 150px;
+}
+
+.weather-text{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.weather-text > p{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.imperial{
+  display: none;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px){
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .weather-box{
+    width: 300px;
+    height: 300px;
+    padding: 3rem 0 1.5rem 0;
+  }
+  
+  .change-system{
+    right: 20px;
+    top: 15px;
+    font-size: 2.4rem;
+  }
+  
+  .weather-img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .weather-text{
+    height: 200px;
+    gap: .9rem;
+  }
+  
+  .weather-text > p{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .weather-box{
+    width: 250px;
+    height: 250px;
+    padding: 2rem 0 1rem 0;
+  }
+  
+  .change-system{
+    right: 10px;
+    top: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .weather-img{
+    width: 75px;
+    height: 75px;
+  }
+  
+  .weather-text{
+    height: 175px;
+    gap: .8rem;
+  }
+  
+  .weather-text > p{
+    font-size: 1.2rem;
+  }
+}
